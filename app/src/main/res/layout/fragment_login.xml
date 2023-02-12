@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.Login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tizimga kirish"
+        android:textSize="25sp"
+        android:layout_margin="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textStyle="bold"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_gravity="center"
+        android:textColor="#303B4F" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_surname"
+        style="@style/TextInputLayoutStyle"
+        app:endIconTint="@color/blue"
+        android:layout_height="?attr/actionBarSize"
+        android:hint="Telefon raqam"
+        app:endIconMode="clear_text"
+        android:layout_marginStart="20dp"
+        app:prefixText="+998"
+        android:layout_marginEnd="20dp"
+        app:hintTextColor="@color/blue"
+        android:layout_marginBottom="10dp"
+        app:helperTextTextColor="#E53935">
+
+        <EditText
+            android:id="@+id/edt_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="9"
+            android:digits="0123456789"
+            android:textColor="@color/blue"
+            android:paddingEnd="40dp"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        style="@style/TextInputLayoutStyle"
+        app:endIconTint="@color/blue"
+        android:layout_height="?attr/actionBarSize"
+        android:hint="Parol"
+        app:endIconMode="password_toggle"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:minEms="8"
+        app:hintTextColor="@color/blue"
+        android:layout_marginBottom="10dp"
+        app:helperTextTextColor="#E53935">
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:gravity="top"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="@color/blue" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ro'yxatdan o'tish"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_gravity="center"
+        android:textColor="@color/blue" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_log_in"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_back"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Tizimga kirish" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
